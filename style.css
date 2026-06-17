@@ -1,0 +1,180 @@
+/* ==========================================
+   CUSTOM COLOR PALETTE & VARIABLES
+   ========================================== */
+:root {
+    --primary-teal: #008080;
+    --dark-teal: #005a5a;
+    --accent-coral: #ff7f50;
+    --text-navy: #2b4f60;
+    --bg-light: #f4fbfd;
+    --white: #ffffff;
+}
+
+/* ==========================================
+   GLOBAL STRUCTURE STYLE RULES
+   ========================================== */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-navy);
+    line-height: 1.6;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--text-navy);
+}
+
+/* Smooth page scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+/* ==========================================
+   NAVBAR COMPONENT
+   ========================================== */
+.navbar {
+    background-color: var(--primary-teal) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffe4b5 !important;
+}
+
+/* ==========================================
+   HERO / BANNER COMPONENT
+   ========================================== */
+.hero-section {
+    padding: 120px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+}
+
+/* ==========================================
+   CARD & BOX COMPONENTS
+   ========================================== */
+.card {
+    border-radius: 12px !important;
+    overflow: hidden;
+    background-color: var(--white);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interactive hover animation */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons inside cards */
+.btn-primary {
+    background-color: var(--primary-teal) !important;
+    border-color: var(--primary-teal) !important;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-teal) !important;
+    border-color: var(--dark-teal) !important;
+}
+
+/* ==========================================
+   SECTION TITLE UNDERLINES
+   ========================================== */
+.section-title {
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-coral);
+    border-radius: 2px;
+}
+
+/* Align section title to the left on section blocks */
+section .section-title {
+    display: inline-block;
+}
+
+/* ==========================================
+   FOOTER STYLE RULES
+   ========================================== */
+footer {
+    background-color: var(--text-navy) !important;
+    color: #d1e3ec !important;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-top: 4px solid var(--primary-teal);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.bbc {
+    display: flex;
+    justify-content: center;
+
+}
+
+.paradise-text {
+    background: linear-gradient(to right, #0d6efd, hotpink);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+}
