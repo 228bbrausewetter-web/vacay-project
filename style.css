@@ -178,3 +178,7 @@ ul li a:hover {
     background-clip: text;
     display: inline-block;
 }
+.WTP{
+     display: flex;
+    justify-content: center;
+}
